@@ -16,5 +16,9 @@
         </attr>
     </declare-styleable>
 
+    <declare-styleable name="LeMenu">
+        <attr name="distance" format="dimension"/>
+    </declare-styleable>
+
 
 </resources>

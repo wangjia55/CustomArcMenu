@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:menu="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <com.jacob.arcmenu.LeMenu
+        android:id="@+id/ledongli_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        menu:distance="120dp">
+
+        <ImageView
+            android:id="@+id/image_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_share_btn_close"/>
+
+        <ImageView
+            android:layout_width="@dimen/menu_size"
+            android:layout_height="@dimen/menu_size"
+            android:src="@mipmap/ic_share_qq_friend"/>
+
+        <ImageView
+            android:layout_width="@dimen/menu_size"
+            android:layout_height="@dimen/menu_size"
+            android:src="@mipmap/ic_share_wechat_friend"/>
+
+        <ImageView
+            android:layout_width="@dimen/menu_size"
+            android:layout_height="@dimen/menu_size"
+            android:src="@mipmap/ic_share_qq_zone"/>
+
+        <ImageView
+            android:layout_width="@dimen/menu_size"
+            android:layout_height="@dimen/menu_size"
+            android:src="@mipmap/ic_share_weibo"/>
+
+    </com.jacob.arcmenu.LeMenu>
+
+</RelativeLayout>
