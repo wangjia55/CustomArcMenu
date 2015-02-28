@@ -1,46 +1,31 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:menu="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:context=".MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:menu="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".MainActivity">
 
-
-    <com.jacob.arcmenu.SimpleArcMenu
+    <Button
+        android:id="@+id/button_custom_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        menu:child_radius="35dp"
-        menu:main_radius="80dp">
-
-        <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@mipmap/ic_share_qq_friend"/>
-
-        <TextView
-            android:layout_width="@dimen/child_size"
-            android:layout_height="@dimen/child_size"
-            android:background="@drawable/bg_text"
-            android:gravity="center"
-            android:text="Menu1"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="@dimen/child_size"
-            android:layout_height="@dimen/child_size"
-            android:background="@drawable/bg_text"
-            android:gravity="center"
-            android:text="Menu2"
-            android:textStyle="bold"/>
-
-        <TextView
-            android:layout_width="@dimen/child_size"
-            android:layout_height="@dimen/child_size"
-            android:background="@drawable/bg_text"
-            android:gravity="center"
-            android:text="Menu3"
-            android:textStyle="bold"/>
-    </com.jacob.arcmenu.SimpleArcMenu>
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="简单的自定义菜单控件"/>
 
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/button_arc_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="仿照Path的弧形菜单"/>
+
+    <Button
+        android:id="@+id/button_le_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="仿照乐动力的菜单"/>
+
+</LinearLayout>
